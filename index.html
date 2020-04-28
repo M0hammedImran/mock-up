@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>E-Comm</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="prod_img">
+        <img
+          id="prod__img"
+          src="./images/aashir-10kgs.jpg"
+          alt="product image"
+        />
+      </div>
+      <div class="prod-details">
+        <p>
+          Aashirvaad Atta - Whole Wheat, <span id="weight">10</span>kg pouch
+        </p>
+        <h3>Rs <span id="price">399</span></h3>
+        <div class="pack_size">
+          <p>Pack Sizes</p>
+          <button class="btn-10">
+            10kg <br />
+            Rs 399
+          </button>
+          <button class="btn-5">
+            5kg <br />
+            Rs 209
+          </button>
+        </div>
+        <div class="quantity">
+          <p>QUANTITY:</p>
+          <br />
+          <div class="quantity-btns">
+            <button id="minus">-</button><span id="quantity">1</span>
+            <button id="plus">+</button>
+          </div>
+        </div>
+        <div class="payable">
+          <button>Payable</button> = Rs <span id="total">399</span>
+        </div>
+      </div>
+      <div class="recommended-prod">
+        <img src="./images/masala.jpg" alt="" />
+        <p>Masalas, Spices and Cooking Paste</p>
+      </div>
+      <div class="extra">
+        <div class="container">
+          <img src="./images/aashir-5kgs.jpg" alt="" />
+          <p>Atta & Flour</p>
+        </div>
+        <div class="container">
+          <img src="./images/rice-bag.jpg" alt="" />
+          <p>Rice & Rice Products</p>
+        </div>
+        <div class="container">
+          <img src="./images/dal-packet.jpg" alt="" />
+          <p>Dals and Pulses</p>
+        </div>
+        <div class="container">
+          <img src="./images/oil-packet.jpg" alt="" />
+          <p>Cooking Oils</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
