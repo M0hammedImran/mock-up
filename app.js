@@ -13,7 +13,9 @@ let quantity = 1;
 let weight = 10;
 let price = 399;
 
+// Default
 btn_1.classList.add('select');
+
 // Listeners
 btn_1.addEventListener('click', () => {
   weight = 10;
@@ -54,4 +56,4 @@ plus_btn.addEventListener('click', () => {
   total_span.innerText = quantity * price;
 });
 
-// Function
+// Functions
