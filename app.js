@@ -20,38 +20,51 @@ btn_1.classList.add('select');
 btn_1.addEventListener('click', () => {
   weight = 10;
   price = 399;
+
   weight_span.innerHTML = weight;
   price_span.innerHTML = price;
+
   btn_1.classList.add('select');
   btn_2.classList.remove('select');
+
   quantity = 1;
+
   quantity_span.innerText = quantity;
   total_span.innerText = quantity * price;
+
   prod_img.src = './images/aashir-10kgs.jpg';
 });
 
 btn_2.addEventListener('click', () => {
   weight = 5;
   price = 209;
+
   weight_span.innerHTML = weight;
   price_span.innerHTML = price;
+
   btn_1.classList.remove('select');
   btn_2.classList.add('select');
+
   quantity = 1;
+
   quantity_span.innerText = quantity;
   total_span.innerText = quantity * price;
+
   prod_img.src = './images/aashir-5kgs.jpg';
 });
 
 minus_btn.addEventListener('click', () => {
   quantity >= 2 ? quantity-- : minus_btn.setAttribute('disabled', '');
+
   quantity_span.innerText = quantity;
   total_span.innerText = quantity * price;
 });
 
 plus_btn.addEventListener('click', () => {
   quantity <= 19 ? quantity++ : plus_btn.setAttribute('disabled', '');
+
   minus_btn.removeAttribute('disabled');
+
   quantity_span.innerText = quantity;
   total_span.innerText = quantity * price;
 });
